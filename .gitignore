@@ -4,3 +4,11 @@
 DYNA.CSV
 *.EIN
 *.SCH
+*.DXF
+*.f
+*.D
+*.AUS
+*.PLT
+*.MLD
+*.LST
+*.KPD
