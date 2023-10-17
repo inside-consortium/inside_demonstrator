@@ -15,3 +15,4 @@ DYNA.CSV
 .Rproj.user
 *.Rproj
 .DS_Store
+.Rhistory
