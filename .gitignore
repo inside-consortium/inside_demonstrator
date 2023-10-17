@@ -12,3 +12,6 @@ DYNA.CSV
 *.MLD
 *.LST
 *.KPD
+.Rproj.user
+*.Rproj
+.DS_Store
