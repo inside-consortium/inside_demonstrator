@@ -1,7 +1,7 @@
 using CSV, DataFrames, Plots
 
 base_path = joinpath(pwd(), "inside_demonstrator")
-experiment_name = "last_day/MittelstarkerRegen"
+experiment_name = "2_weeks/MittelstarkerRegen"
 
 tandler_output_path = joinpath(base_path, "tandler_output/preprocessed/$experiment_name")
 output_path = joinpath(base_path, "analysis/plots/++systems/$experiment_name")

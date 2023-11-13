@@ -16,3 +16,7 @@ DYNA.CSV
 *.Rproj
 .DS_Store
 .Rhistory
+
+*.png
+tandler_output/original
+.idea/

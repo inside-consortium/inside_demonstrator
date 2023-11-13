@@ -1,7 +1,7 @@
 using CSV, DataFrames, Plots
 
 base_path = joinpath(pwd(), "inside_demonstrator")
-experiment_name = "last_day/"
+experiment_name = "2_weeks"
 
 tandler_output_path = joinpath(base_path, "tandler_output/preprocessed/$experiment_name")
 output_path = joinpath(base_path, "analysis/plots/++systems/$experiment_name")
@@ -12,10 +12,10 @@ df_MittelstarkerRegen = CSV.read(joinpath(tandler_output_path, "MittelstarkerReg
 df_keinRegen = CSV.read(joinpath(tandler_output_path, "keinRegen/flow_rates.csv"), DataFrame, delim=",")
 
 # plot for one location
-loc = "RW134"
+loc = "RW157"
 df_sub = dropmissing(df_Nieselregen, :location)
 df_sub = df_sub[df_sub.location.==loc,:]
-plot(df_sub.time, df_sub.flow_rate, label="Nieselregen")
+plot(df_sub.time, df_sub.flow_rate, label="Nieselregen", xlabel="time (min)", ylabel="flow rate (l/s)", title="$loc")
 df_sub = dropmissing(df_MittelstarkerRegen, :location)
 df_sub = df_sub[df_sub.location.==loc,:]
 plot!(df_sub.time, df_sub.flow_rate, label="MittelstarkerRegen")
