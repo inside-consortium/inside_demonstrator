@@ -45,7 +45,7 @@ compare_rain_scenarios("b_constant_hydraulics_same")
 function compare_degradation_scenarios(rain_scenario)
     rain_scenarios = [rain_scenario]
     hydraulics_settings = ["0_recalculate_hydraulics", "a_constant_hydraulics_avg", "b_constant_hydraulics_same"]
-    output_path = joinpath(base_path, "analysis/plots/++systems/$base_experiment/compare_hydraulics_settings/$(rain_scenarios)")
+    output_path = joinpath(base_path, "analysis/plots/++systems/$base_experiment/compare_hydraulics_settings/$(rain_scenario)")
     
     isdir(output_path) || mkpath(output_path)
 
