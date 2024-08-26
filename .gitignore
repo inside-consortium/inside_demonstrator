@@ -20,3 +20,6 @@ DYNA.CSV
 *.png
 tandler_output/original
 .idea/
+
+simulation_output/*/*/*.txt
+simulation_output/*/*/*.csv
