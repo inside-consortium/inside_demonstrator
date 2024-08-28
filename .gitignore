@@ -16,10 +16,11 @@ DYNA.CSV
 *.Rproj
 .DS_Store
 .Rhistory
+*.pyc
+*.csv
+*.txt
 
 *.png
-tandler_output/original
 .idea/
-
-simulation_output/*/*/*.txt
-simulation_output/*/*/*.csv
+.venv/*
+.vscode/*
